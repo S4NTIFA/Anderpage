@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AnderStore - Zapatos Urbanos</title>
-  <link rel="stylesheet" href="/CSS/index.css" />
-  <link rel="stylesheet" href="/CSS/footer.css" />
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
@@ -27,17 +27,17 @@
     <h2>Nuevas llegadas</h2>
     <div class="products-grid">
       <div class="product-card">
-        <img src="/IMG/Zapato1.jpg" alt="Zapatilla 1" />
+        <img src="IMG/Zapato1.jpg" alt="Zapatilla 1" />
         <h3>Zapatilla Street Pro</h3>
         <p>$159.900</p>
       </div>
       <div class="product-card">
-        <img src="/img/zapato2.jpg" alt="Zapatilla 2" />
+        <img src="img/zapato2.jpg" alt="Zapatilla 2" />
         <h3>Urban Classic</h3>
         <p>$129.900</p>
       </div>
       <div class="product-card">
-        <img src="/img/zapato3.jpg" alt="Zapatilla 3" />
+        <img src="img/zapato3.jpg" alt="Zapatilla 3" />
         <h3>Runner Bold</h3>
         <p>$139.900</p>
       </div>
@@ -46,16 +46,16 @@
 
   <script>
     // Cargar dinámicamente el header
-    fetch('/HTML/header.html')
+    fetch('HTML/header.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('header-container').innerHTML = data;
         // Luego de insertar el header, carga y ejecuta el script
         const script = document.createElement('script');
-        script.src = '/jS/header.js';
+        script.src = 'jS/header.js';
         document.body.appendChild(script);
       });
-      fetch('/HTML/footer.html')
+      fetch('HTML/footer.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('footer-container').innerHTML = data;
